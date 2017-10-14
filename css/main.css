@@ -21,13 +21,13 @@ a {
 }
 
 a:hover {
-    color: #6b727c
+    color: #6b727c;
 }
 
 h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    color: #6b727c
+    color: #6b727c;
 }
 
 p {
