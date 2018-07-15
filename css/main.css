@@ -1,7 +1,33 @@
-body {
+body 
+{
     margin: 60px auto;
     width: 70%;
+    font-family: 'Quicksand', sans-serif;
 }
+
+/*Header and footer styles*/
+
+footer 
+{
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
+}
+
+nav ul, footer ul 
+{
+    font-family: 'Quicksand', sans-serif;
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+}
+
+nav ul li, footer ul li 
+{
+    display: inline;
+    margin-right: 20px;
+}
+
+/*Utility Text styles*/
 
 .Title
 {
@@ -9,43 +35,33 @@ body {
     font-family: 'IM Fell DW Pica', serif;
 }
 
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-a {
+a 
+{
     text-decoration: none;
     color: #999;
 }
 
-a:hover {
+a:hover 
+{
     color: #6b727c;
 }
 
-p {
+p 
+{
     font-size: 1.5em;
     line-height: 1.4em;
     color: #333;
 }
 
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
-}
+/*Styling for blog posts*/
 
-ul.posts { 
+ul.posts 
+{ 
     margin: 20px auto 40px; 
     font-size: 1.5em;
 }
 
-ul.posts li {
+ul.posts li 
+{
     list-style: none;
 }
