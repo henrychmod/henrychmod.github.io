@@ -2,7 +2,8 @@ body
 {
     margin: 60px auto;
     width: 70%;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Markazi Text', serif;
+    color: #333;
 }
 
 /*Header and footer styles*/
@@ -15,7 +16,7 @@ footer
 
 nav ul, footer ul 
 {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Markazi Text', serif;
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -33,6 +34,7 @@ nav ul li, footer ul li
 {
     font-size: 3em;
     font-family: 'IM Fell DW Pica', serif;
+    color: #000000;
 }
 
 a 
@@ -50,7 +52,6 @@ p
 {
     font-size: 1.5em;
     line-height: 1.4em;
-    color: #333;
 }
 
 /*Styling for blog posts*/
