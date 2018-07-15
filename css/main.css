@@ -3,6 +3,12 @@ body {
     width: 70%;
 }
 
+.Title
+{
+    font-size: 3em;
+    font-family: 'IM Fell DW Pica', serif;
+}
+
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
@@ -22,11 +28,6 @@ a {
 
 a:hover {
     color: #6b727c;
-}
-
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 
 p {
