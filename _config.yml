@@ -1,2 +1,4 @@
 name: Henry Clarke-Hanson
 markdown: kramdown
+
+theme: jekyll-theme-cayman
