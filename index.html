@@ -1,24 +1,117 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Henry CH</title>
-        <meta charset="UTF-8">
-        <meta name="description" content="My personal website">
-        <meta name="author" content="Henry Clarke-Hanson">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="styles/main.css">
-        <link rel="icon" type="image/x-icon" href="pictures/favicon.ico">
-    </head>
-    <body>
-        <div id="navimg">
-            <img src="pictures/NewLogo.png" width="256" height="64" alt="An abstract picture of blue, green and white">
-            <!-- ^ Gif found here [https://cyber.dabamos.de/88x31/] -->
-        </div>
-        <nav>
-            <a href="art/art.html">Art</a>
-        </nav>
 
-        <p>Sometimes put things im working on here, mostly for myself. Everything else you can probably find on my <a href="https://github.com/henrychmod">Github</a>.</p>
+<html lang="en">
 
-    </body>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>There are no websites in the void, only platforms.</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: 
+                repeating-conic-gradient(#000000 0% 25%, #0a0a1a 0% 50%) 50% / 2px 2px,
+                linear-gradient(to bottom, #000000, #0a0a1a);
+            height: 100vh;
+            position: relative;
+            image-rendering: pixelated;
+            image-rendering: crisp-edges;
+        }
+
+        .star {
+            position: absolute;
+            background: #fffacd;
+            border-radius: 0;
+            animation: twinkle linear infinite;
+            box-shadow: 
+                1px 0 0 #fffacd,
+                -1px 0 0 #fffacd,
+                0 1px 0 #fffacd,
+                0 -1px 0 #fffacd,
+                1px 1px 0 rgba(255, 250, 205, 0.5),
+                -1px -1px 0 rgba(255, 250, 205, 0.5);
+        }
+
+        @keyframes twinkle {
+            0%, 100% {
+                opacity: 0.2;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.2);
+            }
+        }
+
+        .text-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #0f0f1f;
+            border: 2px solid #2a2a3a;
+            padding: 30px 40px;
+            color: #f8eca8;
+            font-family: monospace;
+            font-size: 24px;
+            text-align: center;
+            box-shadow: 
+                0 0 0 1px #1a1a2a,
+                0 4px 8px rgba(0, 0, 0, 0.5);
+            image-rendering: pixelated;
+            image-rendering: crisp-edges;
+            z-index: 10;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="text-box">
+        There doesn't seem to be anything here.
+    </div>
+
+    <script>
+        
+        function hangTheStars() {
+
+            const body = document.body;
+
+            const starCount = 500;
+
+            for (let i = 0; i < starCount; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                
+                const size = Math.random() * 1.5 + 3.05;
+                star.style.width = `${Math.floor(size)}px`;
+                star.style.height = `${Math.floor(size)}px`;
+                
+                star.style.left = `${Math.random() * 100}%`;
+                star.style.top = `${Math.random() * 100}%`;
+                
+                const duration = Math.random() * 4 + 2;
+                star.style.animationDuration = `${duration}s`;
+                
+                const delay = Math.random() * 4;
+                star.style.animationDelay = `${delay}s`;
+                
+                body.appendChild(star);
+            }
+        }
+
+        hangTheStars();
+
+    </script>
+
+</body>
+
 </html>
